@@ -28,6 +28,12 @@ public class CalculatorTest {
     @Test
     void shouldPrintSubtractionOfTwoInput()
     {
+        assertThat(calculator.subtraction(7,6),is(1));
+    }
+    
+    @Test
+    void shouldPrintNegativeAnswerWhenLargerInputIsNegative()
+    {
         assertThat(calculator.subtraction(5,6),is(-1));
     }
 
